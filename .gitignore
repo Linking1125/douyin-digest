@@ -1,0 +1,24 @@
+# Runtime artefacts, never commit these
+__pycache__/
+*.pyc
+_tmp/
+work/
+
+# The installer's virtualenv. Built locally by scripts/install.py, and ~3.5GB
+# of platform-specific binaries -- never share or commit it.
+.venv/
+venv/
+
+# Downloaded media and transcripts stay local by design. Scoped to the working
+# directories the scripts actually use, so a checked-in *.txt doc is not
+# silently dropped.
+work/**/*.txt
+work/**/*.mp3
+work/**/*.mp4
+work/**/*.wav
+cookies.txt
+.transcripts/
+
+# per-user runtime state (cache lives in the home dir, not here, but a
+# relative invocation or an older version can drop it alongside the skill)
+.douyin-digest/

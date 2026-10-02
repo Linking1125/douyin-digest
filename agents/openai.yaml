@@ -1,0 +1,7 @@
+interface:
+  display_name: "抖音视频总结"
+  short_description: "粘贴抖音链接，本地转写并总结视频内容"
+  default_prompt: "Use $douyin-digest to fetch and summarise this Douyin video: <link>"
+
+policy:
+  allow_implicit_invocation: true

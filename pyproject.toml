@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "douyin-digest"
+version = "0.2.0"
+description = "Turn a Douyin share link into a clean local transcript."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = { text = "MIT" }
+keywords = ["douyin", "asr", "transcription", "funasr", "sensevoice"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+dependencies = [
+    "torch>=2.0",
+    "torchaudio>=2.0",
+    "funasr==1.2.6",
+    "yt-dlp",
+    "modelscope",
+    "numpy<2",
+]
+
+[project.optional-dependencies]
+# Browsing is only needed when the CDN wants a cookie, which is the uncommon
+# case. Keeping it out of the base install saves ~150MB.
+browser = ["playwright>=1.40"]
+
+[project.urls]
+Homepage = "https://github.com/OWNER/douyin-digest"
+
+[tool.setuptools]
+packages = ["scripts"]
+
+[tool.setuptools.package-dir]
+"" = "scripts"
