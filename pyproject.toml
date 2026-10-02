@@ -32,7 +32,7 @@ dependencies = [
 browser = ["playwright>=1.40"]
 
 [project.urls]
-Homepage = "https://github.com/OWNER/douyin-digest"
+Homepage = "https://github.com/Linking1125/douyin-digest"
 
 [tool.setuptools]
 packages = ["scripts"]

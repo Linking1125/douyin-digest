@@ -120,4 +120,4 @@ pass. Common cases:
 
 Transcribes videos you chose to open yourself. Nothing is republished,
 transcripts stay local. You're responsible for the platform's terms and the
-content's copyright. MIT licensed — see `LICENSE`.
+content's copyright. MIT licensed — see `LICENSE`; scope note in `NOTICE.md`.
