@@ -1,0 +1,7 @@
+# Normalise line endings in the repository so the tree is identical on every
+# machine. The scripts are Python and the docs are Markdown, so nothing depends
+# on CRLF, and a stable tree keeps forks and contributions clean.
+* text=auto eol=lf
+
+*.ps1  text eol=crlf
+*.bat  text eol=crlf
